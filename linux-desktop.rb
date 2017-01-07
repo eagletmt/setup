@@ -17,6 +17,7 @@ include_cookbook 'bind-tools'
 include_cookbook 'lsof'
 include_cookbook 'sipcalc'
 include_cookbook 'pkgfile'
+include_cookbook 'systemd'
 
 # Basic GUI apps
 include_cookbook 'x11'
