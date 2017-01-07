@@ -9,6 +9,7 @@ include_cookbook 'vim'
 include_cookbook 'uim'
 include_cookbook 'yaskkserv'
 
+include_cookbook 'urxvt'
 include_cookbook 'xmonad'
 include_cookbook 'firefox'
 include_cookbook 'envchain'
