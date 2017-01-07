@@ -1,7 +1,6 @@
 include_cookbook 'ghc'
 package 'xmobar'
 
-cabal 'xmonad'
 cabal 'xmonad-contrib' do
   options %w[-fuse_xft]
 end
