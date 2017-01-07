@@ -6,3 +6,7 @@ node.reverse_merge!(
 )
 
 ghq 'eagletmt/dotfiles'
+
+link "#{node[:home]}/.gitconfig" do
+  to "#{node[:dotfiles][:dir]}/dot.gitconfig"
+end
