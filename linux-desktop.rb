@@ -16,6 +16,7 @@ include_cookbook 'dstat'
 
 # Basic GUI apps
 include_cookbook 'x11'
+include_cookbook 'fonts'
 include_cookbook 'urxvt'
 include_cookbook 'xmonad'
 include_cookbook 'firefox'
