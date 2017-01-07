@@ -4,6 +4,7 @@ node.reverse_merge!(
   },
 )
 
+include_cookbook 'ghq'
 execute 'ghq get eagletmt/dotfiles' do
   user node[:user]
   not_if ['test', '-d', node[:dotfiles][:dir]]

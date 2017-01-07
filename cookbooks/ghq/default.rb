@@ -1,2 +1,2 @@
-include_cookbook 'ghq'
+include_cookbook 'git'
 package 'ghq'
