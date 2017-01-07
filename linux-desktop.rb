@@ -9,5 +9,6 @@ include_cookbook 'tmux'
 include_cookbook 'zsh'
 include_cookbook 'vim'
 include_cookbook 'uim'
+include_cookbook 'yaskkserv'
 
 include_cookbook 'firefox'
