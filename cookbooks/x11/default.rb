@@ -7,6 +7,7 @@ end
 
 directory "#{node[:home]}/.config" do
   owner node[:user]
+  group node[:group]
   mode '755'
 end
 

@@ -1,4 +1,11 @@
 node[:user] = ENV['SUDO_USER'] || ENV['USER']
+gid =
+  if ENV['SUDO_GID']
+    Integer(ENV['SUDO_GID'])
+  else
+    Etc.getpwnam(node[:user]).gid
+  end
+node[:group] = Etc.getgrgid(gid).name
 node[:home] = "/home/#{node[:user]}"
 
 include_recipe 'cookbooks/functions'
