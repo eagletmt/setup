@@ -6,3 +6,4 @@ include_cookbook 'dotfiles'
     to "#{node[:dotfiles][:dir]}/dot.#{file}"
   end
 end
+ghq 'eagletmt/misc'
