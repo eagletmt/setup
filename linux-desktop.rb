@@ -18,3 +18,6 @@ include_cookbook 'envchain'
 
 # Extra apps
 include_cookbook 'remmina'
+include_cookbook 'evince'
+include_cookbook 'feh'
+include_cookbook 'virt-manager'
