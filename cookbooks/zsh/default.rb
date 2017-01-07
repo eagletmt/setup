@@ -1,4 +1,5 @@
 package 'zsh'
+package 'zsh-completions'
 
 include_cookbook 'dotfiles'
 %w[zprofile zshenv zshrc].each do |file|
