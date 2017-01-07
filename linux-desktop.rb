@@ -7,3 +7,5 @@ include_cookbook 'envchain'
 include_cookbook 'ghc'
 include_cookbook 'tmux'
 include_cookbook 'zsh'
+
+include_cookbook 'firefox'
