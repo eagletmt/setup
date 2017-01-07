@@ -13,6 +13,7 @@ include_cookbook 'yaskkserv'
 include_cookbook 'the_silver_searcher'
 include_cookbook 'htop'
 include_cookbook 'dstat'
+include_cookbook 'bind-tools'
 
 # Basic GUI apps
 include_cookbook 'x11'
