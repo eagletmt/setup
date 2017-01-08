@@ -26,6 +26,7 @@ include_cookbook 'sipcalc'
 include_cookbook 'pkgfile'
 include_cookbook 'systemd'
 include_cookbook 'gnupg'
+include_cookbook 'ssh-agent'
 
 # Basic GUI apps
 include_cookbook 'x11'
