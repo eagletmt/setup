@@ -14,3 +14,7 @@ end
 link "#{node[:home]}/.config/gtk-3.0" do
   to "#{node[:dotfiles][:dir]}/dot.config/gtk-3.0"
 end
+
+link "#{node[:home]}/.xinitrc" do
+  to "#{node[:dotfiles][:dir]}/dot.xinitrc"
+end
