@@ -49,6 +49,7 @@ include_cookbook 'openssh'
 include_cookbook 'sshfs'
 include_cookbook 'awscli'
 include_cookbook 'rbenv'
+include_cookbook 'ruby'
 
 # Extra apps
 include_cookbook 'remmina'
