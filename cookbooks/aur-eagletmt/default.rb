@@ -1,6 +1,4 @@
-execute 'pacman-key --recv-keys C48DBD97 && pacman-key --lsign-key C48DBD97' do
-  action :nothing
-end
+include_cookbook 'pacman-key-eagletmt'
 
 file '/etc/pacman.conf' do
   action :edit
@@ -13,6 +11,4 @@ file '/etc/pacman.conf' do
       content << server << "\n"
     end
   end
-
-  notifies :run, 'execute[pacman-key --recv-keys C48DBD97 && pacman-key --lsign-key C48DBD97]'
 end

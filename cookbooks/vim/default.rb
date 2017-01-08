@@ -1,4 +1,18 @@
-include_cookbook 'arch-wanko-cc'
+include_cookbook 'pacman-key-eagletmt'
+
+file '/etc/pacman.conf' do
+  action :edit
+  server = "[vim-latest]\nServer = http://arch.wanko.cc/$repo/os/$arch"
+
+  block do |content|
+    if content =~ /^\[vim-latest\]/
+      content.gsub!(/^\[vim-latest\].*\n.*$/, server)
+    else
+      content << server << "\n"
+    end
+  end
+end
+
 package 'vim-latest'
 
 include_cookbook 'ghq'

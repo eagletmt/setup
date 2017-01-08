@@ -1,2 +1,2 @@
-include_cookbook 'arch-wanko-cc'
+include_cookbook 'aur-eagletmt'
 package 'global'
