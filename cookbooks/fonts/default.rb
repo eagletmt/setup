@@ -1,5 +1,7 @@
 package 'ttf-inconsolata'
 package 'ttf-symbola'
+package 'noto-fonts'
+package 'noto-fonts-cjk'
 package 'fontforge'
 
 include_cookbook 'yaourt'
