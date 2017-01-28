@@ -9,7 +9,7 @@ end
 
 execute 'cabal update' do
   user node[:user]
-  not_if ['test', '-r', "#{node[:home]}/.cabal/packages/hackage.haskell.org/00-index.cache"]
+  not_if { FileTest.file?("#{node[:home]}/.cabal/packages/hackage.haskell.org/00-index.cache") }
 end
 
 define :cabal, options: [] do
