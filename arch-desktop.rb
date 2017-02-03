@@ -27,6 +27,7 @@ include_cookbook 'pkgfile'
 include_cookbook 'systemd'
 include_cookbook 'gnupg'
 include_cookbook 'ssh-agent'
+include_cookbook 'locale'
 
 # Basic GUI apps
 include_cookbook 'x11'
