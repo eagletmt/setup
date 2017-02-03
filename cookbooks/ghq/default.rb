@@ -12,6 +12,7 @@ define :ghq do
 
   execute "ghq get #{repo}" do
     user node[:user]
+    command ['ghq', 'get', repo]
     not_if { FileTest.directory?("#{node[:ghq][:root]}/github.com/#{repo}") }
   end
 end

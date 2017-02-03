@@ -12,6 +12,7 @@ define :systemd_user do
 
   execute "env DBUS_SESSION_BUS_ADDRESS=#{dbus_session_bus_address} systemctl --user enable #{unit}" do
     user node[:user]
+    command ['env', "DBUS_SESSION_BUS_ADDRESS=#{dbus_session_bus_address}", 'systemctl', '--user', 'enable', unit]
     not_if ['env', "DBUS_SESSION_BUS_ADDRESS=#{dbus_session_bus_address}", 'systemctl', '--user', '--quiet', 'is-enabled', unit]
   end
 end
