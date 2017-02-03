@@ -7,3 +7,7 @@ include_cookbook 'dotfiles'
   end
 end
 ghq 'eagletmt/misc'
+
+link "#{node[:home]}/.config/vimfx" do
+  to "#{node[:dotfiles][:dir]}/dot.config/vimfx"
+end
