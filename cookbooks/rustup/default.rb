@@ -1,5 +1,7 @@
 package 'rustup'
 
+ENV['RUSTUP_HOME'] = "/home/#{node[:user]}/.rustup"
+
 define :rustup_toolchain do
   toolchain = params[:name]
 
