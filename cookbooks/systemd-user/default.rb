@@ -1,3 +1,16 @@
+directory '/etc/systemd/user.conf.d' do
+  owner 'root'
+  group 'root'
+  mode '755'
+end
+
+remote_file '/etc/systemd/user.conf.d/accounting.conf' do
+  owner 'root'
+  group 'root'
+  mode '644'
+end
+
+
 dbus_session_bus_address =
   if ENV['DBUS_SESSION_BUS_ADDRESS']
     ENV['DBUS_SESSION_BUS_ADDRESS']
