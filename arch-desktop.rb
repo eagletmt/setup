@@ -28,6 +28,7 @@ include_cookbook 'systemd'
 include_cookbook 'gnupg'
 include_cookbook 'ssh-agent'
 include_cookbook 'locale'
+include_cookbook 'nftables'
 
 # Basic GUI apps
 include_cookbook 'x11'
@@ -54,6 +55,7 @@ include_cookbook 'sshfs'
 include_cookbook 'awscli'
 include_cookbook 'rbenv'
 include_cookbook 'ruby'
+include_cookbook 'docker'
 
 # Extra apps
 include_cookbook 'remmina'
