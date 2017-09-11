@@ -1,9 +1,6 @@
 include_cookbook 'ghc'
 package 'xmobar'
-
-cabal 'xmonad-contrib' do
-  options %w[-fuse_xft]
-end
+package 'xmonad-contrib'
 
 include_cookbook 'dotfiles'
 link "#{node[:home]}/.xmonad" do
