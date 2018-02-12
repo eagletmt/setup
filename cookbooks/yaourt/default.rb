@@ -11,6 +11,7 @@ define :yaourt do
   pkg = params[:name]
 
   execute "yaourt -S --noconfirm #{pkg}" do
+    user node[:user]
     command ['yaourt', '-S', '--noconfirm', pkg]
     not_if { node[:yaourt][:alpm].installed?(pkg) }
   end
