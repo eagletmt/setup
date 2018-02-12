@@ -1,4 +1,6 @@
-# TODO: find minimal xorg packages
+package 'xorg-xinit'
+package 'xorg-server'
+package 'xorg-xrandr'
 
 include_cookbook 'dotfiles'
 link "#{node[:home]}/.Xmodmap" do
