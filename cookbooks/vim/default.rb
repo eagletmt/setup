@@ -15,8 +15,8 @@ end
 
 package 'vim-latest'
 
-include_cookbook 'ghq'
-ghq 'Shougo/dein.vim'
+include_cookbook 'clg'
+clg 'Shougo/dein.vim'
 
 include_cookbook 'dotfiles'
 

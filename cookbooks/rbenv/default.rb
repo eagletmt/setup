@@ -1,9 +1,9 @@
-include_cookbook 'ghq'
-ghq 'rbenv/rbenv'
-ghq 'rbenv/ruby-build'
+include_cookbook 'clg'
+clg 'rbenv/rbenv'
+clg 'rbenv/ruby-build'
 
 link "#{node[:home]}/.rbenv" do
-  to "#{node[:ghq][:root]}/github.com/rbenv/rbenv"
+  to "#{node[:clg][:root]}/github.com/rbenv/rbenv"
 end
 directory "#{node[:home]}/.rbenv/plugins" do
   owner node[:user]
@@ -11,5 +11,5 @@ directory "#{node[:home]}/.rbenv/plugins" do
   mode '755'
 end
 link "#{node[:home]}/.rbenv/plugins/ruby-build" do
-  to "#{node[:ghq][:root]}/github.com/rbenv/ruby-build"
+  to "#{node[:clg][:root]}/github.com/rbenv/ruby-build"
 end
