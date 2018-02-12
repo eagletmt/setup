@@ -8,3 +8,7 @@ remote_file '/etc/bluetooth/main.conf' do
   group 'root'
   mode '644'
 end
+
+service 'bluetooth.service' do
+  action [:enable, :start]
+end
