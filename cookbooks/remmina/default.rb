@@ -1,1 +1,2 @@
 package 'remmina'
+package 'freerdp'
