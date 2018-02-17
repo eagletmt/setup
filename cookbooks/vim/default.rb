@@ -14,6 +14,7 @@ file '/etc/pacman.conf' do
 end
 
 package 'vim-latest'
+package 'luajit'
 
 include_cookbook 'clg'
 clg 'Shougo/dein.vim'
