@@ -26,3 +26,9 @@ include_cookbook 'dotfiles'
     to "#{node[:dotfiles][:dir]}/dot.#{file}"
   end
 end
+
+directory "#{node[:home]}/.vim/undo" do
+  owner node[:user]
+  group node[:group]
+  mode '755'
+end
