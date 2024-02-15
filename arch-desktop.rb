@@ -12,7 +12,6 @@ include_recipe 'cookbooks/functions'
 
 # Basic non-GUI apps
 include_cookbook 'ntp'
-include_cookbook 'tmux'
 include_cookbook 'zsh'
 include_cookbook 'vim'
 include_cookbook 'uim'
